@@ -2,27 +2,52 @@ html {
   font-family: "Verdana", "Helvetica", sans-serif;
   font-size: 18px;
   background-color: white;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 body {
   line-height: 1.4;
 }
 
-header {
-  background-image: url(../resources/images/banner.jpg);
-  width: 60%;
+.left {
+  max-width: 60%;
+  height: auto;
+  margin: 24px 0 24px 0;
+  padding: 0 24px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.right {
+  max-width: 40%;
+  padding: 0 0 0 24px;
+}
+
+.everyday {
+  max-width: 65%;
+}
 
 .container {
-  display: block;
+  display: flex;
+  width: 100%;
+  padding: 0 24px 0 24px;
 }
 
-.banner {
-display: flex;
-text-align: right;
+.gray {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
 }
+
+
+.left img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 24px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .navigation {
   display: inline-flex;
@@ -67,19 +92,52 @@ nav li {
 }
 
 .caption {
-  padding: 1.5rem 5rem;
-  margin: 10rem auto auto auto;
-  background-color: white;
+display: block;
   }
 
-.caption h1 {
+h1 {
+  width: 65%;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 1.2;
-
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 30px auto;
+}
 
+h3 {
+  width: 65%;
+  font-size: 1.25rem;
+  margin: 30px 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 32px;
+  }
+
+#quote {
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: auto;
+      width: 65%;
+  text-align: center;
+  padding: 18px 0 16px 0;
+}
+
+.btn a {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 30px auto;
+  color: white;
+}
 
 
 footer {
@@ -100,6 +158,11 @@ display: inline-flex;
 
 footer ul {
   display: flex;
+  padding-right: 15px;
+  }
+
+  footer li {
+    padding-right: 15px;
   }
 
 
@@ -111,10 +174,6 @@ footer ul {
   .mobile-nav {
     display: block;
     text-align: center;
-  }
-
-.info {
-  width: 35%;
   }
 
 }
